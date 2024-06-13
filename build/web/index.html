@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>API Rest - MySQL Server</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table {
+                border:1px solid black;
+                border-collapse:collapse;                
+            }
+            table td,
+            table th {
+                border:1px solid black;
+                padding:5px 10px;
+            }
+            table th {
+                background-color:orange;
+            }
+            .cabecera {
+                font-weight: bold;
+                background-color:#dddddd;
+            }
+            .rotulo {
+                font-weight: bold;
+                background-color:#f2deac;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>API Rest Compras-Clientes - MySQL Server</h1>       
+        <table>
+            <tr>
+                <td class="rotulo">Database</td>
+                <td>bdcompras</td>
+            </tr>                
+            <tr>
+                <td class="rotulo">Tablas</td>
+                <td>clientes<br>
+		compras
+		</td>
+            </tr>  
+            <tr>
+                <td class="rotulo">Content-Type</td>
+                <td>
+                    application/json
+                </td>
+            </tr>  
+            <tr>
+                <td class="rotulo">Accept</td>
+                <td>
+                    application/json
+                </td>
+            </tr>  
+        </table>
+
+         <br><br> 
+
+        <table>
+            <tr>
+                <th>MÉTODO</th>
+                <th>PATH</th>
+            </tr>
+            <tr>
+                <td class="cabecera">GET</td>
+                <td><a href="/bdcompras/data/clientes">/bdcompras/data/clientes</a></td>
+            </tr>     
+            <tr>
+                <td class="cabecera">GET</td>
+                <td><a href="/bdcompras/data/compras">/bdcompras/data/compras</a></td>
+            </tr>     
+            <tr>
+                <td class="cabecera">PUT</td>
+                <td><b>/bdcompras/data/clientes</b> (actualizar solo email y telefono)</td>
+            </tr>
+            <tr>
+                <td class="cabecera">GET</td>
+                <td><a href="/bdcompras/data/compras/totales">/bdcompras/data/compras/totales</a></td>
+            </tr>     
+        </table>
+         
+                 
+    </body>
+</html>
+
